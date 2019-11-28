@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Home Bills Fragment"
+        android:textSize="38sp"
+        android:id="@+id/title"
+
+        />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"
+        android:background="@color/colorPrimaryDark"
+        android:outlineAmbientShadowColor="@color/colorPrimary"
+        android:text="Bill 1" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_below="@id/t1"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorPrimary"
+        android:textSize="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="Bill 2" />
+
+</RelativeLayout>

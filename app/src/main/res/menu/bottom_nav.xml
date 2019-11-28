@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bills_home"
+        android:title="Bills"
+        android:icon="@drawable/ic_action_name"
+        />
+
+    <item
+        android:id="@+id/reps"
+        android:title="Representatives"
+        android:icon="@drawable/ic_reps"
+        />
+
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_profile"
+        />
+
+</menu>
