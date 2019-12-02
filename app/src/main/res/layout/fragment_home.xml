@@ -1,42 +1,153 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    tools:context=".HomeFragment"
+    android:id="@+id/relativeLayout">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Home Bills Fragment"
-        android:textSize="38sp"
-        android:id="@+id/title"
+        android:layout_height="match_parent">
 
-        />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/t1"
-        android:layout_width="150dp"
-        android:layout_height="200dp"
-        android:layout_below="@id/title"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="50dp"
-        android:background="@color/colorPrimaryDark"
-        android:outlineAmbientShadowColor="@color/colorPrimary"
-        android:text="Bill 1"
-        android:textSize="30dp" />
+            <View
+                android:id="@+id/top_bar"
+                android:layout_width="414dp"
+                android:layout_height="80dp"
+                android:background="@color/colorPrimary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/t2"
-        android:layout_below="@id/t1"
-        android:layout_width="150dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="25dp"
-        android:background="@color/colorPrimary"
-        android:textSize="30dp"
-        android:layout_marginLeft="30dp"
-        android:text="Bill 2" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:src="@drawable/back_arrow"
+                app:layout_constraintBottom_toBottomOf="@+id/top_bar"
+                app:layout_constraintStart_toStartOf="@+id/top_bar"
+                app:layout_constraintTop_toTopOf="@+id/top_bar" />
 
-</RelativeLayout>
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:text="Bills"
+                android:textAlignment="center"
+                android:textColor="@color/whiteColor"
+                android:textSize="38sp"
+                app:layout_constraintBottom_toBottomOf="@+id/top_bar"
+                app:layout_constraintEnd_toEndOf="@+id/top_bar"
+                app:layout_constraintStart_toStartOf="@+id/top_bar"
+                app:layout_constraintTop_toTopOf="@+id/top_bar" />
+
+            <TextView
+                android:id="@+id/bill1"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="32dp"
+                android:background="@color/colorPrimaryDark"
+                android:outlineAmbientShadowColor="@color/colorPrimary"
+                android:text="Securing America's Borders Act"
+                android:textSize="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/top_bar" />
+
+            <TextView
+                android:id="@+id/bill2"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="40dp"
+                android:background="@color/colorPrimaryDark"
+                android:outlineAmbientShadowColor="@color/colorPrimary"
+                android:text="Citizenship for Children of Military Members and Civil Servants Act"
+                android:textSize="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/bill1" />
+
+            <TextView
+                android:id="@+id/bill3"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary"
+                android:text="TRACED Act"
+                android:textSize="30dp"
+                app:layout_constraintStart_toStartOf="@+id/bill1"
+                app:layout_constraintTop_toBottomOf="@+id/bill1" />
+
+            <TextView
+                android:id="@+id/bill4"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary"
+                android:text="Bill 4"
+                android:textSize="30dp"
+                app:layout_constraintEnd_toEndOf="@+id/bill2"
+                app:layout_constraintTop_toBottomOf="@+id/bill2" />
+
+            <TextView
+                android:id="@+id/bill5"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimaryDark"
+                android:outlineAmbientShadowColor="@color/colorPrimary"
+                android:text="Bill 5"
+                android:textSize="30dp"
+                app:layout_constraintStart_toStartOf="@id/bill3"
+                app:layout_constraintTop_toBottomOf="@id/bill3" />
+
+            <TextView
+                android:id="@+id/bill6"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimaryDark"
+                android:outlineAmbientShadowColor="@color/colorPrimary"
+                android:text="Bill 6"
+                android:textSize="30dp"
+                app:layout_constraintStart_toStartOf="@id/bill4"
+                app:layout_constraintTop_toBottomOf="@id/bill4" />
+
+            <TextView
+                android:id="@+id/bill7"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="32dp"
+                android:background="@color/colorPrimary"
+                android:text="Bill 7"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/bill5"
+                app:layout_constraintTop_toBottomOf="@id/bill5" />
+
+            <TextView
+                android:id="@+id/bill8"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="32dp"
+                android:background="@color/colorPrimary"
+                android:text="Bill 8"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/bill6"
+                app:layout_constraintTop_toBottomOf="@id/bill6" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
