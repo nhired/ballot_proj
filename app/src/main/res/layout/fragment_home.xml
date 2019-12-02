@@ -20,13 +20,13 @@
         android:id="@+id/t1"
         android:layout_width="150dp"
         android:layout_height="200dp"
-        android:layout_marginLeft="30dp"
         android:layout_below="@id/title"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="50dp"
-        android:textSize="30dp"
         android:background="@color/colorPrimaryDark"
         android:outlineAmbientShadowColor="@color/colorPrimary"
-        android:text="Bill 1" />
+        android:text="Bill 1"
+        android:textSize="30dp" />
 
     <TextView
         android:id="@+id/t2"

@@ -1,20 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".BillSummary">
+    android:layout_height="match_parent">
 
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Detailed Bill Summary Page"
-        android:textSize="38sp">
+        android:layout_height="wrap_content">
 
-    </TextView>
+        <ImageView
+            android:id="@+id/top_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/immigration_bill_top_bar" />
 
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="45dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back_arrow" />
 
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="50dp"
+            android:text="Summary"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/top_bar" />
 
+        <TextView
+            android:id="@+id/summary_text"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="A bill to require the Commissioner of U.S. Customs and Border Protection to annually hire at least 600 new Border Patrol agents, to report quarterly to Congress on the status of the Border Patrol workforce, and to conduct a comprehensive staffing analysis."
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/summary"
+            app:layout_constraintTop_toBottomOf="@+id/summary" />
 
-</RelativeLayout>
+        <ImageView
+            android:id="@+id/sponsor_ron_johnson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/summary_text"
+            app:srcCompat="@drawable/sponsor_box_ron_johnson" />
+
+        <ImageView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="@+id/sponsor_ron_johnson"
+            app:layout_constraintStart_toStartOf="@+id/sponsor_ron_johnson"
+            app:layout_constraintTop_toBottomOf="@+id/sponsor_ron_johnson"
+            app:srcCompat="@drawable/status" />
+
+        <TextView
+            android:id="@+id/local_reps_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:text="Contact your local representatives:"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/status" />
+
+        <ImageView
+            android:id="@+id/ben_cardin_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="@+id/local_reps_header"
+            app:layout_constraintTop_toBottomOf="@+id/local_reps_header"
+            app:srcCompat="@drawable/ben_cardin_icon" />
+
+        <ImageView
+            android:id="@+id/chris_van_hollen_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="@+id/ben_cardin_icon"
+            app:layout_constraintTop_toBottomOf="@+id/ben_cardin_icon"
+            app:srcCompat="@drawable/chris_van_hollen_icon" />
+
+        <ImageView
+            android:id="@+id/anthony_brown_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="@+id/chris_van_hollen_icon"
+            app:layout_constraintTop_toBottomOf="@+id/chris_van_hollen_icon"
+            app:srcCompat="@drawable/anthony_brown_icon" />
+
+        <ImageView
+            android:id="@+id/steny_hoyer_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="@+id/anthony_brown_icon"
+            app:layout_constraintTop_toBottomOf="@+id/anthony_brown_icon"
+            app:srcCompat="@drawable/steny_hoyer_icon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
