@@ -75,7 +75,7 @@
             android:id="@+id/local_reps_header"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="90dp"
+            android:layout_marginTop="60dp"
             android:text="Contact your local representatives:"
             android:textColor="@android:color/black"
             android:textSize="24sp"
@@ -89,7 +89,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            app:layout_constraintStart_toStartOf="@+id/local_reps_header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/local_reps_header"
             app:srcCompat="@drawable/ben_cardin_icon" />
 
@@ -116,9 +117,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
             app:layout_constraintStart_toStartOf="@+id/anthony_brown_icon"
             app:layout_constraintTop_toBottomOf="@+id/anthony_brown_icon"
             app:srcCompat="@drawable/steny_hoyer_icon" />
+
+        <TextView
+            android:id="@+id/reference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="32dp"
+            android:text="Source: https://www.govtrack.us/congress/bills/116/s2162"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/steny_hoyer_icon" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
