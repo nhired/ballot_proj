@@ -25,15 +25,15 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:src="@drawable/back_arrow"
-                app:layout_constraintBottom_toBottomOf="@+id/top_bar"
-                app:layout_constraintStart_toStartOf="@+id/top_bar"
-                app:layout_constraintTop_toTopOf="@+id/top_bar" />
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="32dp"-->
+<!--                android:src="@drawable/back_arrow"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/top_bar"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/top_bar"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/top_bar" />-->
 
             <TextView
                 android:id="@+id/title"
@@ -50,102 +50,82 @@
                 app:layout_constraintStart_toStartOf="@+id/top_bar"
                 app:layout_constraintTop_toTopOf="@+id/top_bar" />
 
-            <TextView
+            <ImageView
                 android:id="@+id/bill1"
                 android:layout_width="150dp"
                 android:layout_height="200dp"
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="32dp"
-                android:background="@color/colorPrimaryDark"
-                android:outlineAmbientShadowColor="@color/colorPrimary"
-                android:text="Securing America's Borders Act"
-                android:textSize="30dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/top_bar" />
+                app:layout_constraintTop_toBottomOf="@+id/top_bar"
+                android:src="@drawable/borders_act"/>
 
-            <TextView
+            <ImageView
                 android:id="@+id/bill2"
                 android:layout_width="150dp"
                 android:layout_height="200dp"
                 android:layout_marginEnd="40dp"
-                android:background="@color/colorPrimaryDark"
-                android:outlineAmbientShadowColor="@color/colorPrimary"
-                android:text="Citizenship for Children of Military Members and Civil Servants Act"
-                android:textSize="30dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/bill1" />
+                app:layout_constraintTop_toTopOf="@+id/bill1"
+                android:src="@drawable/ncaa"/>
 
-            <TextView
+            <ImageView
                 android:id="@+id/bill3"
                 android:layout_width="150dp"
                 android:layout_height="200dp"
                 android:layout_marginTop="20dp"
-                android:background="@color/colorPrimary"
-                android:text="TRACED Act"
-                android:textSize="30dp"
                 app:layout_constraintStart_toStartOf="@+id/bill1"
-                app:layout_constraintTop_toBottomOf="@+id/bill1" />
+                app:layout_constraintTop_toBottomOf="@+id/bill1"
+                android:src="@drawable/defense"/>
 
-            <TextView
+            <ImageView
                 android:id="@+id/bill4"
                 android:layout_width="150dp"
                 android:layout_height="200dp"
                 android:layout_marginTop="20dp"
-                android:background="@color/colorPrimary"
-                android:text="Bill 4"
-                android:textSize="30dp"
                 app:layout_constraintEnd_toEndOf="@+id/bill2"
-                app:layout_constraintTop_toBottomOf="@+id/bill2" />
+                app:layout_constraintTop_toBottomOf="@+id/bill2"
+                android:src="@drawable/wage_act"/>
 
-            <TextView
+            <ImageView
                 android:id="@+id/bill5"
                 android:layout_width="150dp"
                 android:layout_height="200dp"
                 android:layout_marginTop="20dp"
-                android:background="@color/colorPrimaryDark"
-                android:outlineAmbientShadowColor="@color/colorPrimary"
-                android:text="Bill 5"
-                android:textSize="30dp"
                 app:layout_constraintStart_toStartOf="@id/bill3"
-                app:layout_constraintTop_toBottomOf="@id/bill3" />
+                app:layout_constraintTop_toBottomOf="@id/bill3"
+                android:src="@drawable/sj"/>
 
-            <TextView
+            <ImageView
                 android:id="@+id/bill6"
                 android:layout_width="150dp"
                 android:layout_height="200dp"
                 android:layout_marginTop="20dp"
-                android:background="@color/colorPrimaryDark"
-                android:outlineAmbientShadowColor="@color/colorPrimary"
-                android:text="Bill 6"
-                android:textSize="30dp"
                 app:layout_constraintStart_toStartOf="@id/bill4"
-                app:layout_constraintTop_toBottomOf="@id/bill4" />
+                app:layout_constraintTop_toBottomOf="@id/bill4"
+                android:src="@drawable/weapons_ban"/>
 
-            <TextView
+            <ImageView
                 android:id="@+id/bill7"
                 android:layout_width="150dp"
                 android:layout_height="200dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="32dp"
-                android:background="@color/colorPrimary"
-                android:text="Bill 7"
-                android:textSize="30dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="@id/bill5"
-                app:layout_constraintTop_toBottomOf="@id/bill5" />
+                app:layout_constraintTop_toBottomOf="@id/bill5"
+                android:src="@drawable/taxpayer"/>
 
-            <TextView
+            <ImageView
                 android:id="@+id/bill8"
                 android:layout_width="150dp"
                 android:layout_height="200dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="32dp"
-                android:background="@color/colorPrimary"
-                android:text="Bill 8"
-                android:textSize="30dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="@id/bill6"
-                app:layout_constraintTop_toBottomOf="@id/bill6" />
+                app:layout_constraintTop_toBottomOf="@id/bill6"
+                android:src="@drawable/parenthood_act"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
